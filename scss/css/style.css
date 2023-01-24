@@ -1,0 +1,74 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-shadow: none;
+}
+
+a {
+  padding: 0;
+  margin: 0;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.container {
+  width: 1200px;
+  margin: 0 auto;
+}
+
+.main {
+  background-color: darkolivegreen;
+  height: 900px;
+  color: #FFFFFF;
+}
+.main__info {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  height: 900px;
+}
+.main__info-logo {
+  padding-top: 40px;
+}
+.main__info-title {
+  text-align: center;
+}
+.main__title-slogan p {
+  font-size: 18px;
+  line-height: 25px;
+}
+.main__title-company h2 {
+  font-size: 64px;
+  line-height: 87px;
+  font-variant: small-caps;
+}
+.main__title-company h3 {
+  font-size: 42px;
+  line-height: 57px;
+}
+.main__title-enroll {
+  padding-top: 100px;
+}
+.main__title-enroll a {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 25px;
+  color: #FFFFFF;
+}
+.main__title-enroll a img {
+  position: absolute;
+  top: 515px;
+  left: 770px;
+}
+.main__contact {
+  padding-bottom: 50px;
+}
+.main__contact-links a {
+  padding: 0px 10px 0px 10px;
+}
+
+/*# sourceMappingURL=style.css.map */
