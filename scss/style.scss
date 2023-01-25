@@ -12,7 +12,7 @@ a {
 
 
 body {
-  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 
 }
 
@@ -24,8 +24,10 @@ body {
 
 
 .main {
-  background-color: darkolivegreen;
-  height: 900px;
+  background-image: url(../img/bg/bg.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
   color: #FFFFFF;
 
   &__info {
@@ -64,17 +66,11 @@ body {
   }
 
   &__title-enroll {
-    padding-top: 100px;
     a {
       font-weight: 400;
       font-size: 18px;
       line-height: 25px;
       color: #FFFFFF;
-      img {
-        position: absolute;
-        top: 515px;
-        left: 770px;
-      }
     }
   }
 
@@ -88,3 +84,28 @@ body {
     }
   }
 }
+
+.main {
+
+  &__title-enroll {
+    
+  }
+}
+.title {
+
+  &__enroll-arrow {
+        position: relative;
+    top: 35px;
+    left: -120px;
+    a button {
+      background: none;
+      border: #FFFFFF solid 2.5px;
+      padding: 35px 25px 35px 25px;
+      border-radius: 50%;
+      transition: 0.25s;
+    }
+    a button:hover {
+      background: #A9A32A;
+    }
+  }
+} 

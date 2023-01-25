@@ -1,7 +1,8 @@
 * {
   padding: 0;
   margin: 0;
-  box-shadow: none;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
 a {
@@ -11,7 +12,7 @@ a {
 }
 
 body {
-  font-family: "Noto Sans", sans-serif;
+  font-family: 'Noto Sans', sans-serif;
 }
 
 .container {
@@ -26,41 +27,59 @@ body {
   height: 100vh;
   color: #FFFFFF;
 }
+
 .main__info {
+  display: -webkit-box;
+  display: -ms-flexbox;
   display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
   height: 900px;
 }
+
 .main__info-logo {
   padding-top: 40px;
 }
+
 .main__info-title {
   text-align: center;
 }
+
 .main__title-slogan p {
   font-size: 18px;
   line-height: 25px;
 }
+
 .main__title-company h2 {
   font-size: 64px;
   line-height: 87px;
   font-variant: small-caps;
 }
+
 .main__title-company h3 {
   font-size: 42px;
   line-height: 57px;
 }
+
 .main__title-enroll a {
   font-weight: 400;
   font-size: 18px;
   line-height: 25px;
   color: #FFFFFF;
 }
+
 .main__contact {
   padding-bottom: 50px;
 }
+
 .main__contact-links a {
   padding: 0px 10px 0px 10px;
 }
@@ -70,15 +89,16 @@ body {
   top: 35px;
   left: -120px;
 }
+
 .title__enroll-arrow a button {
   background: none;
   border: #FFFFFF solid 2.5px;
   padding: 35px 25px 35px 25px;
   border-radius: 50%;
+  -webkit-transition: 0.25s;
   transition: 0.25s;
 }
+
 .title__enroll-arrow a button:hover {
   background: #A9A32A;
 }
-
-/*# sourceMappingURL=style.css.map */
