@@ -22,7 +22,7 @@ body {
   margin: 0 auto;
 }
 
-
+// header начало
 .main {
   background-image: url(../img/bg/bg.png);
   background-repeat: no-repeat;
@@ -108,4 +108,55 @@ body {
       background: #A9A32A;
     }
   }
-} 
+}
+// header конец
+
+//service начало
+.services {
+
+  &__title {
+    padding: 100px 0px 50px 0px;
+    h4 {
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 33px;
+      color: #868585;
+    }
+  }
+
+  &__info {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__info-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+  &__text-img {
+  }
+}
+
+.info {
+
+  &__text-block {
+    h5 {
+      width: 510px;
+      font-weight: 700;
+      font-size: 18px;
+      line-height: 25px;
+      color: #303030;
+    }
+    p
+    {
+      width: 480px;
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      color: #303030;
+    }
+  }
+}
+// service конец
