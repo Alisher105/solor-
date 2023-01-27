@@ -2,6 +2,7 @@
   padding: 0;
   margin: 0;
   box-shadow: none;
+  box-sizing: border-box;
 }
 
 a {
@@ -31,7 +32,7 @@ body {
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  height: 900px;
+  height: 960px;
 }
 .main__info-logo {
   padding-top: 40px;
@@ -79,6 +80,134 @@ body {
 }
 .title__enroll-arrow a button:hover {
   background: #A9A32A;
+}
+
+.services__title {
+  padding: 100px 0px 50px 0px;
+}
+.services__title h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #868585;
+}
+.services__info {
+  display: flex;
+  justify-content: space-between;
+}
+.services__info-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.info__text-block h5 {
+  width: 510px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #303030;
+  padding-bottom: 10px;
+}
+.info__text-block p {
+  width: 520px;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #303030;
+}
+
+.rate {
+  padding-top: 160px;
+}
+.rate h4 {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 33px;
+  color: #868585;
+}
+.rate__wrapper-info {
+  padding-top: 60px;
+}
+
+.info__wrapper-block {
+  display: flex;
+}
+
+.wrapper__block-one {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  width: 50%;
+}
+
+.block__one-link {
+  word-spacing: 36px;
+}
+.block__one-link a {
+  font-weight: 400;
+  font-size: 18px;
+  color: #303030;
+  transition: 0.25s;
+}
+.block__one-link a:hover {
+  border-bottom: 1px solid #303030;
+}
+.block__one-desc {
+  display: flex;
+  justify-content: space-between;
+}
+.block__one-lead {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 16px 40px;
+}
+
+.one__desc-img {
+  width: 45%;
+}
+.one__desc-excerpt {
+  width: 55%;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.one__desc-excerpt p {
+  width: 82%;
+}
+.one__lead-pros {
+  width: 235px;
+}
+.one__lead-pros h5 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #303030;
+}
+.one__lead-pros p {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 19px;
+  color: #303030;
+}
+
+.desc__excerpt-img {
+  padding-right: 10px;
+}
+
+.arrow__reverce {
+  padding-right: 20px;
+  transform: rotate(180deg);
+}
+
+.text__block-two {
+  width: 50%;
+}
+.text__block-two p {
+  padding-bottom: 30px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 25px;
+  color: #303030;
 }
 
 /*# sourceMappingURL=style.css.map */
