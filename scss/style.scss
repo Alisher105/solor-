@@ -391,3 +391,104 @@ body {
 
 // aside конец
 
+// footer начало
+.footer {
+  background-image: url(../img/footer/footerbg.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 700px;
+  color: #FFFFFF;
+  &__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 650px;
+    padding-top: 70px;
+  }
+
+  &__reg {
+    display: flex;
+    justify-content: space-between;
+    height: 400px;
+  }
+
+  &__reg-request {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h5 {
+      font-size: 24px;
+      color: #FFFFFF;
+    }
+
+  }
+
+  &__input {
+    border-bottom: 1px solid#FFFFFF;
+    width: 550px;
+    input {
+      background: transparent;
+      border: none;
+      border-bottom: 2px #fff;
+      color: #fff;
+      outline: none;
+      padding-bottom: 10px;
+    }
+    input::placeholder{
+      color: #fff;
+    }
+  }
+
+
+  &__enroll {
+    a {
+        padding-left: 40px;
+      font-size: 18px;
+      line-height: 25px;
+      color: #FFFFFF;
+    }
+  }
+
+  &__enroll-arrow {
+    position: relative;
+    top: 35px;
+    left: -45px;
+
+    a button {
+      background: none;
+      border: #FFFFFF solid 2.5px;
+      padding: 35px 25px 35px 25px;
+      border-radius: 50%;
+      transition: 0.25s;
+    }
+    a button:hover {
+      background: #A9A32A;
+    }
+  }
+
+  &__reg-contact {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    h5 {
+      font-size: 24px;
+      color: #FFFFFF;
+    }
+  }
+
+  &__copyrigth {
+    a {
+      color: #FFFFFF;
+    }
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__copyrigth-socials {
+    a img {
+      padding-left: 10px;
+    }
+  }
+}
+
+// footer
