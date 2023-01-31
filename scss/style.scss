@@ -12,16 +12,15 @@ a {
 }
 
 h4 {
-  font-weight: 700;
   font-size: 24px;
   color: #868585;
 }
 
 h5 {
+
   font-weight: 700;
   font-size: 18px;
   line-height: 25px;
-  color: #303030;
 }
 
 
@@ -32,8 +31,26 @@ body {
 
 
 .container {
-  width: 1200px;
+  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
+
+  @media all and(max-width: 1200px) {
+    max-width: 1140px;
+    width: 100%;
+    padding: 0px 30px;
+  }
+  @media all and(max-width: 992px) {
+    max-width: 960px;
+    width: 100%;
+    padding: 0px 16px;
+  }
+  @media all and(max-width: 576px) {
+    width: 100%;
+    margin: 0;
+    padding: 0px 18px;
+
+  }
 }
 
 
@@ -128,17 +145,17 @@ body {
 
 //service начало
 .services {
-
+  padding: 150px 0px 150px 0px;
   &__title {
-    padding: 100px 0px 50px 0px;
+    padding-bottom: 50px;
   }
 
-  &__info {
+  &__wrapper {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-between
   }
 
-  &__info-text {
+  &__description {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -147,20 +164,22 @@ body {
     }
   }
 
-  &__text-img {
-  }
-}
-
-.info {
-
-  &__text-block {
-    p
-    {
+  &__description-text {
+    h5 {
+      width: 450px;
+    }
+    p{
       width: 520px;
       font-weight: 400;
       font-size: 14px;
       line-height: 19px;
       color: #303030;
+    }
+  }
+
+  &__img {
+    img {
+      width: 100%;
     }
   }
 }
@@ -177,41 +196,28 @@ body {
     }
   }
 }
-
 // service конец
 
-//green rate начало
+//rate начало
 .rate {
-  padding: 160px 0px 150px 0px;
-
-  &__info {
-    
+  padding-bottom: 150px;
+  &__title {
+    padding-bottom: 60px;
   }
 
-  &__wrapper-info {
-    padding-top: 60px;
-  }
-}
-
-
-.info {
-  &__wrapper-block {
+  &__wrapper {
     display: flex;
   }
-}
-.wrapper {
 
-  &__block-one {
+  &__description {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     width: 50%;
   }
-}
-.block {
 
-  &__one-link {
-    word-spacing:36px;
+  &__nav {
+    word-spacing: 40px;
     a {
       font-weight: 400;
       font-size: 18px;
@@ -223,62 +229,53 @@ body {
     }
   }
 
-  &__one-desc {
+  &__thumbnail {
     display: flex;
     justify-content: space-between;
   }
-  &__one-lead {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 16px 40px;
-    
-  }
-}
-.one {
 
-  &__desc-img {
-    width: 45%;
+  &__thumbnail-img {
+    padding-right: 40px;
   }
 
-  &__desc-excerpt {
-    width: 55%;
+  &__action {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     p {
-      width: 82%;
-    }
-  }
-
-  &__lead-pros {
-    width: 235px;
-    p {
-      font-weight: 400;
       font-size: 14px;
       line-height: 19px;
       color: #303030;
+      width: 70%;
     }
   }
-}
 
-.desc {
-
-  &__excerpt-img {
-    padding-right: 10px;
+  &__action-img {
+    img {
+      padding-right: 10px;
+    }
   }
-}
 
-.arrow {
-
-  &__reverce {
-    padding-right: 20px;
-    transform: rotate(180deg);
+  &__advantage {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 16px 40px;
   }
-}
 
-.text {
-  &__block-two {
+  &__advantage-text {
+    width: 235px;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    color: #303030;
+  }
+
+  &__definition {
     width: 50%;
+  }
+
+  &__definition-text {
     p {
       padding-bottom: 30px;
       font-weight: 700;
@@ -287,8 +284,22 @@ body {
       color: #303030;
     }
   }
+
+  &__definition-img {
+    img {
+      width: 100%;
+    }
+  }
 }
-//green rate конец
+
+.action {
+  &__img-reverce {
+    padding-right: 20px;
+    transform: rotate(180deg);
+  }
+}
+
+//rate конец
 
 // quote начало
 .quote {
@@ -296,7 +307,7 @@ body {
   background-repeat: no-repeat;
   background-size: cover;
   height: 586px;  
-  &__text {
+  &__title {
     h2 {
       padding: 160px 230px;
       font-weight: 400;
@@ -310,7 +321,6 @@ body {
 
 // aside начало
 .aside {
-  padding-bottom: 180px;
   &__clients {
     display: flex;
     justify-content: space-between;
@@ -367,7 +377,6 @@ body {
 
   &__control-arrow {
     a {
-      font-weight: 400;
       font-size: 18px;
       color: #303030;
       padding: 40px;
@@ -406,13 +415,13 @@ body {
     padding-top: 70px;
   }
 
-  &__reg {
+  &__form {
     display: flex;
     justify-content: space-between;
     height: 400px;
   }
 
-  &__reg-request {
+  &__form-request {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -466,7 +475,7 @@ body {
     }
   }
 
-  &__reg-contact {
+  &__form-contact {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -490,5 +499,4 @@ body {
     }
   }
 }
-
 // footer

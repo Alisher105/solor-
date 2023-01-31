@@ -1,0 +1,268 @@
+@media all and (max-width: 1600px) {
+    h4 {
+        font-size: 20px;
+    }
+    
+    h5 {
+        font-size: 16px;
+    }
+    
+    .container {
+        width: 1160px;
+        margin: 0 auto;
+    }
+
+// header начало
+    .main {
+        height: 90vh;
+        &__info {
+            height: 920px;
+        }
+        &__title-slogan {
+            p {
+                font-size: 16px;
+                line-height: 24px;
+            }
+        }
+        &__title-company {
+            h2 {
+                font-size: 60px;
+                line-height: 82px;
+            }
+            h3 {
+                font-size: 40px;
+                line-height: 54px;
+            }
+        }
+        
+        &__title-enroll {
+            a {
+                font-size: 17px;
+            }
+        }
+        
+        &__contact {
+        padding-bottom: 30px;
+        }
+
+        &__contact-links {
+            a {
+                padding: 0px 8px 0px 8px;
+            }
+        }
+    }
+
+    .title {
+        &__enroll-arrow {
+            a button {
+                padding: 30px 20px 30px 20px;
+            }
+        }
+    }
+    // header конец
+
+    //service начало
+    .services {
+        padding-bottom: 120px;
+        &__title {
+        padding: 80px 0px 18px 0px;
+        }
+        &__info-text {
+            h4 {
+                width: 324px;
+            }
+        }
+        &__text-img {
+            img {
+                width: 90%;
+            }
+        }
+    }
+    
+    .info {
+        &__text-block { 
+            p {
+                width: 490px;
+                font-size: 16px;
+                line-height: 18px;
+            }
+        }
+    }
+    
+    .text {
+        &__block-number {
+            p {
+                padding-bottom: 10px;
+                font-size: 14px;
+                line-height: 10px;
+            }
+        }
+    }
+    // service конец
+
+    //green rate начало
+    .rate {
+        padding: 0px 0px 90px 0px;
+        &__wrapper-info {
+        padding-top: 40px;
+        }
+    }
+
+    .block {
+        &__one-link {
+        word-spacing: 32px;
+        a {
+            font-size: 17px;
+        }
+    }
+        &__one-lead {
+            gap: 15px 30px;
+        }
+    }
+    .one {
+        &__desc-img {
+            width: 50%;
+            img {
+                width: 92%;
+            }
+        }
+        &__desc-excerpt {
+            width: 50%;
+            p {
+                width: 80%;
+                font-size: 14px;
+            }
+        }
+        &__lead-pros {
+            width: 235px;
+            p {
+                font-weight: 400;
+                font-size: 14px;
+                line-height: 19px;
+            }
+        }
+    }
+    
+    .text {
+        &__block-two {
+            width: 50%;
+            img {
+                width: 92%;
+            }
+            p {
+                padding-bottom: 25px;
+                font-size: 16px;
+                line-height: 23px;
+            }
+        }
+    }
+    //green rate конец
+    
+    // quote начало
+    .quote {
+        height: 415px;  
+        &__text {
+        h2 {
+            padding: 100px 250px;
+            font-size: 40px;
+        }
+        }
+    }
+    // quote конец
+    
+    // aside начало
+    .aside {
+        padding-bottom: 140px;
+        &__meta-text {
+            padding-left: 40px;
+            p {
+                padding-bottom: 16px;
+            }
+        }
+    }
+    
+    .clients {
+        &__title {
+        padding: 100px 0px 50px 0px;
+        }
+    }
+    .info {
+        &__img-arrow {
+            padding: 8px 0px 0px 280px;
+        }
+
+        &__img-house {
+            width: 95%;
+		}
+    }
+
+    .arrow {
+        &__reverce {
+        padding-right: 20px;
+        transform: rotate(180deg);
+        }
+    }
+    
+    .button {
+        &__control-arrow {
+            a {
+                font-size: 16px;
+                padding: 40px;
+            }
+            a button {
+                top: -20px;
+                left: -352px;
+                padding: 30px 20px 30px 20px;
+            }
+        }
+    }
+    // aside конец
+    
+    // footer начало
+    .footer {
+        height: 600px;
+        &__wrap {
+        height: 580px;
+        padding-top: 50px;
+        }
+    
+        &__reg {
+        height: 350px;
+        }
+    
+        &__reg-request {
+            h5 {
+                font-size: 22px;
+            }
+        }
+        &__enroll {
+            a {
+                font-size: 18px;
+            }
+        }
+    
+        &__enroll-arrow {
+            a button {
+                padding: 30px 20px 30px 20px;
+            }
+        }
+        &__reg-contact {
+            h5 {
+                font-size: 22px;
+                color: #FFFFFF;
+            }
+        }
+        &__copyrigth {
+            a {
+                color: #FFFFFF;
+            }
+        }
+    
+        &__copyrigth-socials {
+            a img {
+                padding-left: 10px;
+            }
+        }
+    }
+    // footer  конец
+}

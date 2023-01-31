@@ -1,0 +1,118 @@
+@media all and (max-width: 500px) {
+  h4 {
+    font-size: 16px;
+  }
+  h5 {
+    font-size: 14px;
+  }
+  .container {
+    width: 800px;
+    margin: 0 auto;
+  }
+  .main {
+    height: 80vh;
+  }
+  .main__info {
+    height: 300px;
+  }
+  .main__info-logo {
+    padding-top: 20px;
+  }
+  .main__info-title {
+    text-align: left;
+  }
+  .main__title-slogan p {
+    font-size: 12px;
+    line-height: 20px;
+  }
+  .main__title-company h2 {
+    font-size: 30px;
+    line-height: 30px;
+  }
+  .main__title-company h3 {
+    font-size: 36px;
+    line-height: 50px;
+  }
+  .main__title-enroll a {
+    font-size: 17px;
+  }
+  .main__contact {
+    padding-bottom: 30px;
+  }
+  .main__contact-links a {
+    padding: 0px 8px 0px 8px;
+  }
+  .title__enroll-arrow a button {
+    padding: 30px 20px 30px 20px;
+  }
+  .services {
+    padding-bottom: 80px;
+    padding-bottom: 110px;
+  }
+  .services__info {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .services__info-text h4 {
+    width: 320px;
+  }
+  .services__text-img img {
+    width: 50%;
+  }
+  .info__text-block p {
+    width: 422px;
+    font-size: 10px;
+    line-height: 12px;
+  }
+  .text__block-number p {
+    padding: 10px 0px 0px 0px;
+  }
+  .block__one-link {
+    word-spacing: 30px;
+  }
+  .one__desc-img img {
+    width: 90%;
+  }
+  .text__block-two img {
+    width: 90%;
+  }
+  .quote {
+    height: 130px;
+  }
+  .quote__text h2 {
+    padding: 30px 60px;
+    font-size: 36px;
+  }
+  .aside {
+    padding-bottom: 120px;
+  }
+  .clients__title {
+    padding: 90px 0px 50px 0px;
+  }
+  .info__img-house {
+    width: 90%;
+  }
+  .button__control-arrow a button {
+    padding: 28px 18px 28px 18px;
+  }
+  .footer {
+    height: 580px;
+  }
+  .footer__wrap {
+    height: 560px;
+  }
+  .footer__reg-request h5 {
+    font-size: 20px;
+  }
+  .footer__input {
+    width: 400px;
+  }
+  .footer__enroll-arrow a button {
+    padding: 28px 18px 28px 18px;
+  }
+  .footer__reg-contact h5 {
+    font-size: 20px;
+  }
+}
