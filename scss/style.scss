@@ -14,20 +14,37 @@ a {
 h4 {
   font-size: 24px;
   color: #868585;
+
+  @media all and(max-width: 1200px) {
+    font-size: 23px;
+  }
+  @media all and(max-width: 992px) {
+    font-size: 20px;
+  }
+  @media all and(max-width: 576px) {
+    font-size: 14px;
+  }
 }
 
 h5 {
   font-size: 18px;
-  line-height: 25px;
   color: #303030;
-}
 
+  @media all and(max-width: 1200px) {
+    font-size: 17px;
+  }
+
+  @media all and(max-width: 992px) {
+    font-size: 16px;
+  }
+  @media all and(max-width: 576px) {
+    font-size: 14px;
+  }
+}
 
 body {
   font-family: 'Noto Sans', sans-serif;
-
 }
-
 
 .container {
   max-width: 1200px;
@@ -48,29 +65,50 @@ body {
     width: 100%;
     margin: 0;
     padding: 0px 18px;
-
   }
 }
 
-
-// header начало
+// header начало------------------------------------------------------------
 .main {
   background-image: url(../img/bg/bg.png);
   background-repeat: no-repeat;
   background-size: cover;
+  background-position-x: center;
   height: 100vh;
   color: #FFFFFF;
+
+  @media all and(max-width: 1200px) {
+  }
 
   &__info {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
-    height: 960px;
+    height: calc(100vh - 38px);
+
+    @media all and(max-width: 1200px) {
+    }
+    @media all and(max-width: 576px) {
+    }
   }
 
   &__info-logo {
     padding-top: 40px;
+
+    @media all and(max-width: 1200px) {
+      padding-top: 30px;
+    }
+
+    @media all and(max-width: 992px) {
+      padding-top: 20px;
+    }
+
+    @media all and(max-width: 576px) {
+      padding-top: 10px;
+      img {
+      }
+    }
   }
 
   &__info-title {
@@ -82,17 +120,52 @@ body {
       font-size: 18px;
       line-height: 25px;
     }
-  }
+    @media all and(max-width: 1200px) {
+      p {
+        font-size: 17px;
+      }
+    }
+    @media all and(max-width: 992px) {
+      p {
+        font-size: 16px;
+      }
   
+    }
+    @media all and(max-width: 576px) {
+      p {
+        font-size: 12px;
+      }
+    }
+  }
+
   &__title-company {
+    
     h2 {
       font-size: 64px;
-      line-height: 87px;
       font-variant: small-caps;
+      @media all and(max-width: 1200px){
+          font-size: 60px;
+      }
+
+      @media all and(max-width: 992px) {
+        font-size: 54px;
+      }
+      @media all and(max-width: 576px) {
+        font-size: 28px;
+      }
+
     }
     h3 {
       font-size: 42px;
-      line-height: 57px;
+      @media all and(max-width: 1200px){
+        font-size: 38px;
+      }
+      @media all and(max-width: 992px) {
+        font-size: 36px;
+      }
+      @media all and(max-width: 576px) {
+        font-size: 18px;
+      }
     }
   }
 
@@ -103,55 +176,101 @@ body {
       line-height: 25px;
       color: #FFFFFF;
     }
+    @media all and(max-width: 1200px) {
+      a {
+        font-size: 17px;
+        line-height: 23px;
+      }
+    }
   }
 
   &__contact {
-    padding-bottom: 50px;
   }
 
   &__contact-links {
     a {
       padding: 0px 10px 0px 10px;
+
     }
   }
 }
 
 .main {
-
   &__title-enroll {
     
   }
 }
-.title {
 
+.title {
   &__enroll-arrow {
     position: relative;
     top: 35px;
     left: -120px;
+
+    @media all and(max-width: 576px) {
+      left: -112px;
+      top: 26px;
+    }
+
     a button {
       background: none;
       border: #FFFFFF solid 2.5px;
       padding: 35px 25px 35px 25px;
       border-radius: 50%;
       transition: 0.25s;
+      @media all and(max-width: 1200px) {
+        border: #FFFFFF solid 2px;
+        padding: 30px 20px 30px 20px;
+      }
+  
+      @media all and(max-width: 992px) {
+        padding: 25px 15px 25px 15px;
+      }
+  
+      @media all and(max-width: 576px) {
+        padding: 12px 0px;
+        img {
+          width: 60%;
+        }
+      }
     }
+
     a button:hover {
       background: #A9A32A;
     }
   }
 }
-// header конец
+// Конец main-----------начало service
 
-//service начало
 .services {
   padding: 150px 0px 150px 0px;
+
+  @media all and(max-width: 1200px) {
+    padding: 100px 0px 100px 0px;
+  }
+
+  @media all and(max-width: 992px) {
+    padding: 100px 0px 100px 0px;
+  }
+
+  @media all and(max-width: 576px) {
+    padding: 55px 0px 50px 0px;
+  }
+
   &__title {
     padding-bottom: 50px;
+    @media all and(max-width: 1200px) {
+      padding-bottom: 30px;
+    }
   }
 
   &__wrapper {
     display: flex;
-    justify-content: space-between
+    justify-content: space-between;
+
+    @media all and(max-width: 992px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__description {
@@ -164,27 +283,60 @@ body {
   }
 
   &__description-text {
-    h5 {
-      width: 450px;
+    width: 80%;
+    @media all and(max-width: 1200px) {
+      width: 100%;
+      padding-bottom: 10px;
     }
+    @media all and(max-width: 992px) {
+      padding-bottom: 10px;
+    }
+
+    @media all and(max-width: 576px) {
+      
+    }
+
+    h5 {
+      padding-bottom: 15px;
+
+      @media all and(max-width: 1200px) {
+        padding-bottom: 0px;
+      }
+      @media all and(max-width: 992px) {
+        padding-bottom: 5px;
+      }
+    }
+
     p{
-      width: 520px;
       font-weight: 400;
       font-size: 14px;
       line-height: 19px;
       color: #303030;
+      @media all and(max-width: 1200px) {
+
+      }
+      @media all and(max-width: 992px) {
+      }
+
+      @media all and(max-width: 576px) {
+        
+        font-size: 12px;
+        padding-bottom: 10px;
+      }
     }
   }
 
   &__img {
+    width: 100%;
+
     img {
       width: 100%;
+      height: 100%;
     }
   }
 }
 
 .text {
-
   &__block-number {
     p {
       padding-bottom: 10px;
@@ -193,19 +345,53 @@ body {
       line-height: 19px;
       color: #868585;
     }
+    @media all and(max-width: 1200px) {
+      p{
+        padding-bottom: 6px;
+        font-size: 13px;
+      }
+    }
+    @media all and(max-width: 992px) {
+      p{
+        padding-bottom: 0px;
+        font-size:12px;
+      };
+    }
   }
 }
-// service конец
 
-//rate начало
+// Конец service-----------начало rate
+
 .rate {
   padding-bottom: 150px;
+
+  @media all and(max-width: 1200px) {
+    padding-bottom: 100px;
+  }
+  @media all and(max-width: 992px) {
+    padding-bottom: 90px;
+
+  }
+  @media all and(max-width: 576px) {
+    padding-bottom: 55px;
+  }
+
   &__title {
     padding-bottom: 60px;
+    @media all and(max-width: 1200px) {
+      padding-bottom: 30px;
+    }
   }
 
   &__wrapper {
     display: flex;
+
+    @media all and(max-width: 992px) {
+      flex-direction: column-reverse;
+    }
+    @media all and(max-width: 576px) {
+      
+    }
   }
 
   &__description {
@@ -213,16 +399,45 @@ body {
     flex-direction: column;
     justify-content: space-between;
     width: 50%;
+    
+    @media all and(max-width: 992px) {
+      width: 100%;
+    }
+
+    @media all and(max-width: 576px) {
+
+    }
   }
 
   &__nav {
     word-spacing: 40px;
+    @media all and(max-width: 1200px) {
+      word-spacing: 30px;
+      padding-bottom: 20px;
+    }
+
+    @media all and(max-width: 576px) {
+      word-spacing: 15px;
+      padding-bottom: 20px;
+    }
+
     a {
       font-weight: 400;
       font-size: 18px;
       color: #303030;
       transition: 0.25s;
+      @media all and(max-width: 1200px) {
+        font-size: 17px;
+      } 
+      @media all and(max-width: 992px) {
+        font-size: 16px;
+      }
+    
+      @media all and(max-width: 576px) {
+        font-size: 15px;
+      }
     }
+
     a:hover {
       border-bottom: 1px solid #303030;
     }
@@ -231,24 +446,46 @@ body {
   &__thumbnail {
     display: flex;
     justify-content: space-between;
+    @media all and(max-width: 576px) {
+      flex-direction: column;
+    } 
   }
 
   &__thumbnail-img {
     padding-right: 40px;
+
+    @media all and(max-width: 1200px) {
+      padding-right: 25px;
+    }
+    
+    @media all and(max-width: 992px) {
+      padding-right: 15px;
+    }    
   }
 
   &__action {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 100%;
     p {
       font-size: 14px;
       line-height: 19px;
       color: #303030;
-      width: 70%;
+      padding-right: 30px;
+
+      @media all and(max-width: 992px) {
+        padding-right: 50px;
+      }
+    
+      @media all and(max-width: 576px) {
+        font-size: 13px;
+        line-height: 19px;
+        padding-right: 20px;
+      }
     }
   }
-
+  
   &__action-img {
     img {
       padding-right: 10px;
@@ -259,19 +496,40 @@ body {
     display: flex;
     flex-wrap: wrap;
     gap: 16px 40px;
+
+    @media all and(max-width: 1200px) {
+      gap: 14px 26px;
+    } 
+    @media all and(max-width: 992px) {
+      padding-top: 40px;
+      gap: 14px 112px;
+    }
+  
+    @media all and(max-width: 576px) {
+      padding-top: 30px;
+      gap: 14px 80px;
+    }
   }
 
   &__advantage-text {
     width: 235px;
-    font-style: normal;
-    font-weight: 400;
     font-size: 14px;
     line-height: 19px;
     color: #303030;
+    
+    @media all and(max-width: 1200px) {
+      font-size: 13px;
+      line-height: 18px;
+    } 
   }
 
   &__definition {
     width: 50%;
+
+    @media all and(max-width: 992px) {
+      width: 100%;
+    } 
+
   }
 
   &__definition-text {
@@ -281,12 +539,28 @@ body {
       font-size: 18px;
       line-height: 25px;
       color: #303030;
+
+      @media all and(max-width: 1200px) {
+        padding-bottom: 20px;
+        font-size: 15px;
+        line-height: 22px;
+      } 
+
+      @media all and(max-width: 992px) {
+        padding-bottom: 40px;
+        font-size: 14px;
+        line-height: 20px;
+      } 
     }
+    
   }
 
   &__definition-img {
+    @media all and(max-width: 992px) {
+      display: none;
+    }
     img {
-      width: 100%;
+      width: 100%; 
     }
   }
 }
@@ -297,52 +571,110 @@ body {
     transform: rotate(180deg);
   }
 }
-//rate конец
 
-// quote начало
+// Конец rate-----------начало quote
+
 .quote {
-  background-image: url(../img/qoute/bgquote.jpg);
+  background-image: url(../img/qoute/bgqout.svg);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 586px;  
+  height: 485px;
+  @media all and(max-width: 1200px) {
+    height: 308px;
+  }
+
+  @media all and(max-width: 992px) {
+    height: 254px;
+  }
+
+  @media all and(max-width: 576px) {
+    height: 137px;
+  }
+
   &__title {
     h2 {
-      padding: 160px 230px;
+      padding-top: 110px;
       font-weight: 400;
       font-size: 42px;
+      margin: 0 auto;
+      width: 70%;
       text-align: center;
       color: #FFFFFF;
+      @media all and(max-width: 1200px) {
+        padding-top: 50px;
+        font-size: 32px;
+        width: 60%;
+      }
+      @media all and(max-width: 992px) {
+        padding-top: 50px;
+        font-size: 24px;
+        width: 62%;
+      }
+
+      @media all and(max-width: 576px) {
+        padding-top: 30px;
+        font-size: 16px;
+        width: 100%;
+      }
     }
   }
 }
-// quote конец
 
-// aside начало
+
+// Конец quote-----------начало aside
+
 .aside {
   &__clients {
     display: flex;
     justify-content: space-between;
+    @media all and(max-width: 992px) {
+      flex-wrap: wrap;;
+    }
   }
 
   &__clients-info {
   }
 
   &__info-img {
+
   }
 
+  
   &__meta {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    width: 50%;
+    @media all and(max-width: 1200px) {
+    }
+
+    @media all and(max-width: 992px) {
+      width: 100%;
+      padding-top: 20px;
+    }
     h5 {
-      width: 490px;
+      @media all and(max-width: 1200px) {
+        font-size: 17px;
+      }
+      @media all and(max-width: 992px) {
+        font-size: 17px;
+        padding-bottom: 20px;
+      }
     }
   }
 
   &__meta-text {  
-    padding-left: 40px;
+    padding-left: 42px;
+    @media all and(max-width: 576px) {
+      padding-left: 0px;
+    }
     p {
+      font-weight: 400;
+      font-size: 14px;
+      line-height: 19px;
+      color: #303030;
       padding-bottom: 16px;
+
     }
   }
 
@@ -355,12 +687,35 @@ body {
 
   &__title {
     padding: 150px 0px 50px 0px;
+    @media all and(max-width: 1200px) {
+      padding: 110px 0px 40px 0px;
+    }
+
+    @media all and(max-width: 992px) {
+      padding: 100px 0px 30px 0px;
+    }
+  
+    @media all and(max-width: 576px) {
+      padding: 55px 0px 20px 0px;
+    }
   }
 }
 .info {
 
   &__img-arrow {
     padding: 10px 0px 0px 280px;
+
+    @media all and(max-width: 1200px) {
+      padding: 0px 0px 0px 180px;
+    }
+  }
+    &__img-house {
+    img {
+      width: 100%;
+      @media all and(max-width: 1200px) {
+        width: 90%;
+      }
+    }
   }
 }
 .arrow {
@@ -374,20 +729,50 @@ body {
 .button {
 
   &__control-arrow {
+    padding-left: 42px;
     a {
       font-size: 18px;
       color: #303030;
-      padding: 40px;
+      width: 100%;
+      @media all and(max-width: 1200px) {
+        font-size: 17px;
+      }
+      @media all and(max-width: 992px) {
+        font-size: 16px;
+      }
+  
+      @media all and(max-width: 576px) {
+        font-size: 14px;
+      }
     }
+
     a button {
       position: relative;
       top: -20px;
-      left: -386px;
+      left: -305px;
       background: none;
       border: #303030 solid 2.5px;
       padding: 35px 25px 35px 25px;
       border-radius: 50%;
       transition: 0.25s;
+      
+      @media all and(max-width: 1200px) {
+        left: -258px;
+        border: #303030 solid 2px;
+        padding: 30px 20px 30px 20px;
+      }
+
+      @media all and(max-width: 992px) {
+        border: #303030 solid 2px;
+        padding: 25px 15px 25px 15px;
+      }
+  
+      @media all and(max-width: 576px) {
+        border: #303030 solid 2px;
+        padding: 20px 10px 20px 10px;
+        top: -10px;
+        left: -230px;
+      }
     }
 
     a button:hover {
@@ -396,43 +781,65 @@ body {
   }
 }
 
-// aside конец
 
-// footer начало
+// Конец aside-----------начало footer
+
 .footer {
-  background-image: url(../img/footer/footerbg.jpg);
+  background-image: url(../img/footer/footerbg.png);
   background-repeat: no-repeat;
   background-size: cover;
-  height: 700px;
   color: #FFFFFF;
+
   &__wrap {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 650px;
-    padding-top: 70px;
+    padding: 70px 0px 50px 0px;
   }
 
   &__form {
     display: flex;
     justify-content: space-between;
-    height: 400px;
+    padding-bottom: 156px;
+    @media all and(max-width: 992px) {
+      justify-content: center;
+      padding-bottom: 60px;
+    }
+
+    @media all and(max-width: 1200px) {
+      padding-top: 0px;
+    }
+    @media all and(max-width: 992px) {
+      flex-wrap: wrap;
+    }
   }
 
   &__form-request {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    h5 {
-      font-size: 24px;
-      color: #FFFFFF;
+    width: 50%;
+    @media all and(max-width: 992px) {
+      justify-content: center;
+      padding-bottom: 60px;
     }
-
+    h5 {
+      color: #FFFFFF;
+      margin-bottom: 60px;
+    }
   }
 
   &__input {
     border-bottom: 1px solid#FFFFFF;
-    width: 550px;
+    width: 510px;
+    margin-bottom: 60px;
+    @media all and(max-width: 1200px) {
+      width: 400px;
+    }
+    @media all and(max-width: 992px) {
+      width: 100%;
+    }
+    
     input {
       background: transparent;
       border: none;
@@ -440,6 +847,10 @@ body {
       color: #fff;
       outline: none;
       padding-bottom: 10px;
+      @media all and(max-width: 1200px) {
+        font-size: 13px;
+        padding-bottom: 8px;
+      }
     }
     input::placeholder{
       color: #fff;
@@ -448,11 +859,18 @@ body {
 
 
   &__enroll {
+    @media all and(max-width: 992px) {
+      text-align: center;
+    }
     a {
-        padding-left: 40px;
+      padding-left: 40px;
       font-size: 18px;
       line-height: 25px;
       color: #FFFFFF;
+      @media all and(max-width: 1200px) {
+        padding-left: 30px;
+        font-size: 16px;
+      }
     }
   }
 
@@ -460,35 +878,84 @@ body {
     position: relative;
     top: 35px;
     left: -45px;
-
-    a button {
-      background: none;
-      border: #FFFFFF solid 2.5px;
-      padding: 35px 25px 35px 25px;
-      border-radius: 50%;
-      transition: 0.25s;
+    @media all and(max-width: 992px) {
+      top: 30px;
+      left: -85px;
     }
-    a button:hover {
-      background: #A9A32A;
+  
+  a button {
+    background: none;
+    border: #FFFFFF solid 2.5px;
+    padding: 35px 25px 35px 25px;
+    border-radius: 50%;
+    transition: 0.25s;
+  }
+  a button:hover {
+    background: #A9A32A;
+  }
+  @media all and(max-width: 1200px) {
+    a button {
+      border: #FFFFFF solid 2px;
+      padding: 30px 20px 30px 20px;
     }
   }
+
+  @media all and(max-width: 992px) {
+    a button {
+      border: #FFFFFF solid 2px;
+      padding: 25px 15px 25px 15px;
+    }
+  }
+}
 
   &__form-contact {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
+    @media all and(max-width: 992px) {
+      text-align: center;
+    }
     h5 {
-      font-size: 24px;
       color: #FFFFFF;
+      margin-bottom: 60px;
+      @media all and(max-width: 992px) {
+        text-align: center;
+      }
+    }
+    
+    p {
+      font-family: 'Noto Sans';
+      font-style: normal;
+      font-weight: 400;
+      font-size: 18px;
+      line-height: 25px;
+
+      &:not(:last-child) {
+        margin-bottom: 30px;
+      }
+      @media all and(max-width: 1200px) {
+          font-size: 16px;
+          line-height: 23px;
+      }
+
     }
   }
 
+
   &__copyrigth {
-    a {
-      color: #FFFFFF;
-    }
     display: flex;
     justify-content: space-between;
+    @media all and(max-width: 992px) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+    a {
+      color: #FFFFFF;
+      @media all and(max-width: 992px) {
+        padding-bottom: 10px;
+      }
+    }
   }
 
   &__copyrigth-socials {
@@ -497,4 +964,4 @@ body {
     }
   }
 }
-// footer
+// Конец footer

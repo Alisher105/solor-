@@ -144,8 +144,9 @@
   }
   .button__control-arrow a button {
     top: -20px;
-    left: -352px;
-    padding: 30px 20px 30px 20px;
+    left: -380px;
+    width: 100px;
+    height: 100px;
   }
   .footer {
     height: 600px;
